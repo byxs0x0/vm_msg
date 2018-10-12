@@ -6,16 +6,15 @@
  - apt使用了aliyun源
  - 硬盘扩容至16GB为上线
 
-## base_v1.1
+ 
+## docker_v1.1
  - 基于`base_v1.0`
  - 通过apt更新内核版本为`4.4.0-137-generic`
-
- 
-## docker_v1.0
- - 基于`base_v1.1`
  - 通过aliyun方式安装了`docker-ce`
  - `/etc/docker/deamon.json`中添加了ustc镜像源
+ - [安装docker-compose](https://linux.cn/article-8746-1.html)
  
-## docker-compose_v1.0
- - 基于`docker_v1.0`
- - 通过pip安装了`docker-compose`
+## base_v1.1
+ - 由于个别原因，该镜像是在`docker_v1.1`之上删除了`docker-ce`与`docker-compose`
+
+
